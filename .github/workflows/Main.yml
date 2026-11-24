@@ -20,6 +20,4 @@ jobs:
           printf 'android.useAndroidX=true\n' > gradle.properties
           gradle assembleDebug
       - uses: actions/upload-artifact@v4
-        with:
-          name: apk
-          path: '**/*.apk'
+        with: {name: apk, path: '**/*.apk'}
